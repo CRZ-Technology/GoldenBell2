@@ -1,0 +1,7 @@
+18:13:21 **** Clean-only build of configuration Debug for project nvme_sd_core1 ****
+make clean 
+rm -rf  ./src/main.o ./src/nvme_api.o ./src/nvme_main.o ./src/request_ipc.o  ./src/main.d ./src/nvme_api.d ./src/nvme_main.d ./src/request_ipc.d  nvme_sd_core1.elf.size  nvme_sd_core1.elf
+' '
+
+18:13:21 Build Finished (took 418ms)
+

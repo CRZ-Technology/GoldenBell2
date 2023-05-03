@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="nvme_sd_core0_system-imgFile" value="C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core0_system/_ide/bootimage/BOOT.bin"/>
+	<item key="nvme_sd_core0_system-offSet" value=""/>
+	<item key="nvme_sd_core0_system-initFile" value="C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/boot/fsbl.elf"/>
+	<item key="nvme_sd_core0_system-flashType" value="qspi-x4-single"/>
+	<item key="nvme_sd_core0_system-verifyFlash" value="false"/>
+	<item key="nvme_sd_core0_system-blankCheck" value="false"/>
+	<item key="nvme_sd_core0_system-device" value="Auto Detect"/>
+	<item key="nvme_sd_core0_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="nvme_sd_core0_system"/>
+</section>

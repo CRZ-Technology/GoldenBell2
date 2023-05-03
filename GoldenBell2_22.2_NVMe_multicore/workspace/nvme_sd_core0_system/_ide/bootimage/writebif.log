@@ -1,0 +1,9 @@
+TRACE::2023-05-03.17:50:54::SCWBifWriter::Found the complete platform C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/nvme.xpfm
+TRACE::2023-05-03.17:50:55::SCWBifWriter::hardware databse : design_1_wrapper_3
+TRACE::2023-05-03.17:50:55::SCWBifWriter::bitstream found in the design
+TRACE::2023-05-03.17:50:55::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2023-05-03.17:50:55::SCWBifWriter::proc type : 
+TRACE::2023-05-03.17:50:55::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2023-05-03.17:50:55::SCWBifWriter::Device type is : zynq
+TRACE::2023-05-03.17:50:55::SCWBifWriter::Writing BIF to file : C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core0_system/_ide/bootimage/template_nvme_sd_core0_system.bif
+TRACE::2023-05-03.17:50:55::SCWBifWriter::Writing the Zynq Baremetal bif 

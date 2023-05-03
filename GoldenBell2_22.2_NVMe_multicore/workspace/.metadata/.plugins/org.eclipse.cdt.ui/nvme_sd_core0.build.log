@@ -1,0 +1,7 @@
+18:13:17 **** Clean-only build of configuration Debug for project nvme_sd_core0 ****
+make clean 
+rm -rf  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/data_buffer.o ./src/main.o ./src/request_allocation.o ./src/request_ipc.o ./src/request_schedule.o ./src/request_transform.o  ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/data_buffer.d ./src/main.d ./src/request_allocation.d ./src/request_ipc.d ./src/request_schedule.d ./src/request_transform.d  nvme_sd_core0.elf.size  nvme_sd_core0.elf
+' '
+
+18:13:20 Build Finished (took 3s.633ms)
+

@@ -1,0 +1,204 @@
+Nothing to build in platform 'nvme'
+
+17:50:28 **** Build of configuration Debug for project nvme_sd_core1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/ps7_cortexa9_1/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nvme_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/ps7_cortexa9_1/bspinclude/include -MMD -MP -MF"src/nvme_api.d" -MT"src/nvme_api.o" -o "src/nvme_api.o" "../src/nvme_api.c"
+../src/nvme_api.c: In function 'read_sd':
+../src/nvme_api.c:21:55: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   21 |         XSdPs_ReadPolled(&SdInstance, sd_blk, sd_nlb, (u8 *)DstAddr);
+      |                                                       ^
+../src/nvme_api.c: In function 'write_sd':
+../src/nvme_api.c:29:57: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   29 |         XSdPs_WritePolled(&SdInstance, sd_blk, sd_nlb,  (u8 *)SrcAddr);
+      |                                                         ^
+../src/nvme_api.c: In function 'read_sd':
+../src/nvme_api.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+   22 | }
+      | ^
+../src/nvme_api.c: In function 'write_sd':
+../src/nvme_api.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+'Finished building: ../src/nvme_api.c'
+' '
+'Building file: ../src/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/ps7_cortexa9_1/bspinclude/include -MMD -MP -MF"src/nvme_main.d" -MT"src/nvme_main.o" -o "src/nvme_main.o" "../src/nvme_main.c"
+'Finished building: ../src/nvme_main.c'
+' '
+'Building file: ../src/request_ipc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_ipc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/ps7_cortexa9_1/bspinclude/include -MMD -MP -MF"src/request_ipc.d" -MT"src/request_ipc.o" -o "src/request_ipc.o" "../src/request_ipc.c"
+../src/request_ipc.c: In function 'ProcessNvmeSdReq':
+../src/request_ipc.c:77:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   77 |         DstAddr = (u64)ipcQPtr->queue[IPC_TYPE_REQ][reqTail].bufAddr;
+      |                   ^
+../src/request_ipc.c:97:57: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   97 |         ipcQPtr->queue[IPC_TYPE_RES][resHead].bufAddr = (void *)DstAddr;
+      |                                                         ^
+'Finished building: ../src/request_ipc.c'
+' '
+'Building target: nvme_sd_core1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/ps7_cortexa9_1/bsplib/lib -o "nvme_sd_core1.elf"  ./src/main.o ./src/nvme_api.o ./src/nvme_main.o ./src/request_ipc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_sd_core1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size nvme_sd_core1.elf  |tee "nvme_sd_core1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40396	   1208	  24880	  66484	  103b4	nvme_sd_core1.elf
+'Finished building: nvme_sd_core1.elf.size'
+' '
+17:50:34 **** Build of configuration Debug for project nvme_sd_core1_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 54215 C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/nvme.xpfm ps7_cortexa9_1 C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core1_system/Debug/system.bif
+sdcard_gen --xpfm C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/nvme.xpfm --sys_config nvme --bif C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core1_system/Debug/system.bif --bitstream C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core1/_ide/bitstream/design_1_wrapper.bit --elf C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core1/Debug/nvme_sd_core1.elf,ps7_cortexa9_1
+creating BOOT.BIN using C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core1/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core1_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+18:12:54 **** Clean-only build of project nvme ****
+buildplatform.bat 50297 nvme clean 
+XSDB Server Channel: tcfchan#1
+Reading the platform  : "nvme"
+Cleaning the zynq_fsbl application.
+rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
+
+Cleaning the zynq_fsbl application, bsp
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/emacps_v3_17/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean 
+
+rm -f ps7_cortexa9_0/lib/libxil.a
+
+Cleaning the BSP for domain  - standalone_domain
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/emacps_v3_17/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean 
+
+rm -f ps7_cortexa9_0/lib/libxil.a
+
+Cleaning the BSP for domain  - ps7_cortexa9_1
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/ddrps_v1_2/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_7/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_8/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/emacps_v3_17/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/gpiops_v3_10/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/qspips_v3_10/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/scugic_v5_0/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_4/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_4/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/sdps_v4_0/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/standalone_v8_0/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/uartps_v3_11/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/usbps_v2_7/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_6/src -s clean 
+
+rm -f ps7_cortexa9_1/lib/libxil.a
+
+18:13:17 **** Clean-only build of configuration Debug for project nvme_sd_core0 ****
+make clean 
+rm -rf  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/data_buffer.o ./src/main.o ./src/request_allocation.o ./src/request_ipc.o ./src/request_schedule.o ./src/request_transform.o  ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/data_buffer.d ./src/main.d ./src/request_allocation.d ./src/request_ipc.d ./src/request_schedule.d ./src/request_transform.d  nvme_sd_core0.elf.size  nvme_sd_core0.elf
+' '
+18:13:20 **** Clean-only build of configuration Debug for project nvme_sd_core0_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+18:13:21 **** Clean-only build of configuration Debug for project nvme_sd_core1 ****
+make clean 
+rm -rf  ./src/main.o ./src/nvme_api.o ./src/nvme_main.o ./src/request_ipc.o  ./src/main.d ./src/nvme_api.d ./src/nvme_main.d ./src/request_ipc.d  nvme_sd_core1.elf.size  nvme_sd_core1.elf
+' '
+18:13:21 **** Clean-only build of configuration Debug for project nvme_sd_core1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif

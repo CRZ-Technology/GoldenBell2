@@ -1,0 +1,120 @@
+18:12:54 **** Clean-only build of project nvme ****
+buildplatform.bat 50297 nvme clean 
+XSDB Server Channel: tcfchan#1
+Reading the platform  : "nvme"
+Cleaning the zynq_fsbl application.
+rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
+
+Cleaning the zynq_fsbl application, bsp
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/emacps_v3_17/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean 
+
+rm -f ps7_cortexa9_0/lib/libxil.a
+
+Cleaning the BSP for domain  - standalone_domain
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/emacps_v3_17/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scugic_v5_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/sdps_v4_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean 
+
+rm -f ps7_cortexa9_0/lib/libxil.a
+
+Cleaning the BSP for domain  - ps7_cortexa9_1
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_8/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_11/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/ddrps_v1_2/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_7/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_8/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/emacps_v3_17/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/gpiops_v3_10/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/qspips_v3_10/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/scugic_v5_0/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_4/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_4/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/sdps_v4_0/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/standalone_v8_0/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/uartps_v3_11/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/usbps_v2_7/src -s clean 
+
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_6/src -s clean 
+
+rm -f ps7_cortexa9_1/lib/libxil.a
+
+
+18:13:16 Build Finished (took 21s.666ms)
+

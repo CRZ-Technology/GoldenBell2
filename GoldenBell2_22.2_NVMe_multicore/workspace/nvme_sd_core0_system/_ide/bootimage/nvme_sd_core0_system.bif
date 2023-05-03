@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme/export/nvme/sw/nvme/boot/fsbl.elf
+	C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core0/_ide/bitstream/design_1_wrapper.bit
+	C:/work/Goldenbell2/GoldenBell2_22.2_NVMe_multicore_20230503/workspace/nvme_sd_core0/Debug/nvme_sd_core0.elf
+	C:\work\Goldenbell2\GoldenBell2_22.2_NVMe_multicore_20230503\workspace\nvme_sd_core1\Debug\nvme_sd_core1.elf
+}
