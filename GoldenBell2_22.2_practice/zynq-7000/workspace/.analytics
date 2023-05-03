@@ -1,0 +1,55 @@
+timestamp=[2023-05-02 14:53:12], mode=WORKBENCH_START, duration=0:00:14.403, duration_ms=14403, data={}
+timestamp=[2023-05-02 14:53:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.869, duration_ms=869, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-05-02 14:53:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.957, duration_ms=1957, data={}
+timestamp=[2023-05-02 16:03:28], mode=PLATFORM_CREATION, duration=0:00:17.111, duration_ms=17111, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2023-05-02 16:05:15], mode=PLATFORM_GENERATION, duration=0:00:50.121, duration_ms=50121, data={name=goldenbell2}
+timestamp=[2023-05-02 17:22:34], mode=APP_CREATION, duration=0:00:06.928, duration_ms=6928, data={name=fsbl, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=goldenbell2, application_type=application}
+timestamp=[2023-05-02 17:45:19], mode=PLATFORM_GENERATION, duration=0:00:11.385, duration_ms=11385, data={name=goldenbell2}
+timestamp=[2023-05-02 17:46:07], mode=PLATFORM_GENERATION, duration=0:00:32.181, duration_ms=32181, data={name=goldenbell2}
+timestamp=[2023-05-02 19:44:11], mode=APP_CREATION, duration=0:00:06.447, duration_ms=6447, data={name=dummy, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=goldenbell2, application_type=application}
+timestamp=[2023-05-02 19:44:41], mode=PLATFORM_GENERATION, duration=0:00:11.143, duration_ms=11143, data={name=goldenbell2}
+timestamp=[2023-05-02 19:45:16], mode=PLATFORM_GENERATION, duration=0:00:31.566, duration_ms=31566, data={name=goldenbell2}
+timestamp=[2023-05-02 19:45:25], mode=BUILD, duration=0:00:08.005, duration_ms=8005, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 10:07:25], mode=BUILD, duration=0:00:04.550, duration_ms=4550, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 10:09:59], mode=APP_CREATION, duration=0:00:07.266, duration_ms=7266, data={name=dummy, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=goldenbell2, application_type=application}
+timestamp=[2023-05-03 10:10:13], mode=BUILD, duration=0:00:07.519, duration_ms=7519, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 10:10:26], mode=BUILD, duration=0:00:12.790, duration_ms=12790, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 10:14:01], mode=MISC, duration=0:00:08.982, duration_ms=8982, data={name=dummy_system, type=bif_creation}
+timestamp=[2023-05-03 11:17:39], mode=PLATFORM_GENERATION, duration=0:00:35.063, duration_ms=35063, data={name=goldenbell2}
+timestamp=[2023-05-03 11:17:42], mode=BUILD, duration=0:00:03.020, duration_ms=3020, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:17:55], mode=BUILD, duration=0:00:12.255, duration_ms=12255, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:27:51], mode=PLATFORM_GENERATION, duration=0:00:17.641, duration_ms=17641, data={name=goldenbell2}
+timestamp=[2023-05-03 11:27:52], mode=BUILD, duration=0:00:00.781, duration_ms=781, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:28:05], mode=BUILD, duration=0:00:12.449, duration_ms=12449, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:31:03], mode=BUILD, duration=0:00:01.739, duration_ms=1739, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:31:17], mode=BUILD, duration=0:00:12.371, duration_ms=12371, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:33:31], mode=PLATFORM_GENERATION, duration=0:00:13.170, duration_ms=13170, data={name=goldenbell2}
+timestamp=[2023-05-03 11:33:32], mode=BUILD, duration=0:00:00.804, duration_ms=804, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:33:45], mode=BUILD, duration=0:00:12.512, duration_ms=12512, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:41:00], mode=PLATFORM_GENERATION, duration=0:00:13.709, duration_ms=13709, data={name=goldenbell2}
+timestamp=[2023-05-03 11:51:00], mode=BUILD, duration=0:00:01.737, duration_ms=1737, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:51:13], mode=BUILD, duration=0:00:12.333, duration_ms=12333, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:54:40], mode=PLATFORM_GENERATION, duration=0:00:11.816, duration_ms=11816, data={name=goldenbell2}
+timestamp=[2023-05-03 11:54:42], mode=BUILD, duration=0:00:01.770, duration_ms=1770, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 11:54:55], mode=BUILD, duration=0:00:12.266, duration_ms=12266, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 14:22:10], mode=WORKBENCH_START, duration=0:00:09.609, duration_ms=9609, data={}
+timestamp=[2023-05-03 14:22:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.469, duration_ms=1469, data={editors_count=8, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,dummy,dummy_system,goldenbell2}
+timestamp=[2023-05-03 14:22:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.938, duration_ms=1938, data={}
+timestamp=[2023-05-03 14:23:13], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=dummy, configuration=Debug, clean_build=true}
+timestamp=[2023-05-03 14:23:13], mode=BUILD, duration=0:00:00.360, duration_ms=360, data={name=dummy_system, configuration=Debug, clean_build=true}
+timestamp=[2023-05-03 14:23:27], mode=PLATFORM_GENERATION, duration=0:00:13.625, duration_ms=13625, data={name=goldenbell2}
+timestamp=[2023-05-03 14:23:59], mode=PLATFORM_GENERATION, duration=0:00:31.156, duration_ms=31156, data={name=goldenbell2}
+timestamp=[2023-05-03 14:24:03], mode=BUILD, duration=0:00:04.032, duration_ms=4032, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 14:24:18], mode=BUILD, duration=0:00:14.344, duration_ms=14344, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 14:29:17], mode=PLATFORM_CREATION, duration=0:00:16.093, duration_ms=16093, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2023-05-03 14:29:57], mode=APP_CREATION, duration=0:00:07.312, duration_ms=7312, data={name=dummy, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=goldenbell2, application_type=application}
+timestamp=[2023-05-03 14:31:21], mode=PLATFORM_GENERATION, duration=0:00:51.656, duration_ms=51656, data={name=goldenbell2}
+timestamp=[2023-05-03 14:31:25], mode=BUILD, duration=0:00:03.887, duration_ms=3887, data={name=dummy, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 14:31:40], mode=BUILD, duration=0:00:13.405, duration_ms=13405, data={name=dummy_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-03 14:32:06], mode=MISC, duration=0:00:09.565, duration_ms=9565, data={name=dummy_system, type=bif_creation}
+timestamp=[2023-05-03 15:18:46], mode=WORKBENCH_START, duration=0:00:10.123, duration_ms=10123, data={}
+timestamp=[2023-05-03 15:18:47], mode=WORKBENCH_UI_INIT, duration=0:00:01.402, duration_ms=1402, data={editors_count=6, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,dummy,dummy_system,goldenbell2}
+timestamp=[2023-05-03 15:18:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.867, duration_ms=1867, data={}
+timestamp=[2023-05-03 15:18:58], mode=BUILD, duration=0:00:00.429, duration_ms=429, data={name=dummy, configuration=Debug, clean_build=true}
+timestamp=[2023-05-03 15:18:59], mode=BUILD, duration=0:00:00.364, duration_ms=364, data={name=dummy_system, configuration=Debug, clean_build=true}
+timestamp=[2023-05-03 15:19:13], mode=PLATFORM_GENERATION, duration=0:00:14.100, duration_ms=14100, data={name=goldenbell2}
